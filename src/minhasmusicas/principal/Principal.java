@@ -1,5 +1,6 @@
 package minhasmusicas.principal;
 
+import minhasmusicas.modelos.MinhasPreferidas;
 import minhasmusicas.modelos.Musica;
 import minhasmusicas.modelos.PodCast;
 
@@ -30,6 +31,8 @@ public class Principal {
             meuPodCast.curte();
         }
 
-
+        MinhasPreferidas preferidas = new MinhasPreferidas();
+        preferidas.inclui(meuPodCast);
+        preferidas.inclui(minhaMusica);
     }
 }
